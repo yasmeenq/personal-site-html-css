@@ -1,0 +1,318 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+
+/* NAVIGATION BAR */
+.nav-link {
+  color: black;
+  text-decoration: none; /* Remove the default underline */
+  position: relative;
+}
+
+.nav-link:hover::before {
+  content: ""; /* Create an empty content for the pseudo-element */
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust the height of the underline */
+  background-color: rgb(151, 0, 0); /* Color of the underline */
+  bottom: 0px; /* Adjust the distance from the text to the underline */
+  left: 0;
+}
+
+.navb {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.nav-pills .nav-link.active {
+  background-color: rgb(151, 0, 0); /* home btn color */
+}
+
+.fs-4 {
+  /*my logo*/
+  font-family: "Zeyada", cursive;
+  font-size: 2rem !important;
+}
+
+/* HOME */
+.top-container {
+  background-image: url(./images/homebk.webp);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-text > h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 6rem;
+  margin: 0;
+  padding: 2rem;
+  padding-top: 13rem;
+  font-family: "Zeyada", cursive;
+  text-align: center;
+}
+
+.title-text > h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding: 1rem;
+  font-family: "Marcellus", serif;
+  font-size: 1.5rem;
+}
+
+.word {
+  color: rgb(151, 0, 0);
+  border-bottom: 2px solid rgb(151, 0, 0); /* You can change the color and style */
+  display: inline-block; /* This ensures that the border only spans the width of the text */
+  padding-bottom: 5px; /* Adjust the padding to control the distance between text and line */
+}
+.title-text > h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(79, 69, 69);
+  font-family: "Marcellus", serif;
+  font-size: 1.3rem;
+}
+
+/*  A b o u t  */
+#about-me {
+  min-height: 100vh;
+  height: auto;
+}
+
+.about {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 3% 15%;
+}
+
+.one > h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 1rem 8rem 0 8rem;
+  font-family: "Zeyada", cursive;
+  text-align: center;
+}
+
+.two > p {
+  align-items: center;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: rgb(85, 69, 69);
+}
+
+.three > h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 1rem 8rem 0 8rem;
+  font-family: "Zeyada", cursive;
+  text-align: center;
+}
+
+.four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.four > img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: 250px;
+  margin: 10px;
+}
+
+/* PROJECTS */
+
+#projects {
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+.head2 {
+  font-family: "Zeyada", cursive;
+  font-size: 3.5rem !important;
+  padding-top: 2rem;
+}
+.card {
+  border-radius: 5%;
+}
+
+.card > img {
+  border-radius: 5%;
+}
+
+.link {
+  color: rgb(151, 0, 0);
+  border: 2px solid rgb(151, 0, 0);
+  padding: 5px;
+  border-radius: 20%;
+}
+
+.card-img-top {
+  object-fit: cover;
+}
+
+.lead {
+  font-family: "Marcellus", serif;
+  color: rgb(85, 69, 69);
+}
+
+.card-text {
+  font-family: "Marcellus", serif;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 0.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #a7a6a6;
+}
+
+.justify-content-center {
+  justify-content: center;
+  gap: 30px;
+}
+
+footer > p {
+  text-align: center;
+  color: #dbdada;
+}
+
+svg {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  /*nav*/
+  .navb {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+  }
+
+  .nav-pills {
+    margin-top: 10px; /* Add margin to the top of the navigation links for spacing */
+  }
+
+  .nav-item {
+    margin-bottom: 5px; /* Add spacing between navigation items on smaller screens */
+  }
+
+  .nav-link {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+
+  /*  HOME */
+  .title-text > h1 {
+    display: block;
+    font-size: 4rem;
+    padding: 4rem 6rem 0 6rem;
+  }
+
+  .title-text > h2 {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .title-text > h3 {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+  }
+  .top-container {
+    height: auto;
+  }
+
+  /* PROJECTS */
+
+  #projects {
+    height: auto;
+  }
+
+  .head2 {
+    font-size: 2rem;
+  }
+
+  /*  A b o u t  */
+  #about-me {
+    height: 200;
+  }
+
+  .about {
+    padding: 5% 5%;
+  }
+
+  .four {
+    flex-direction: column;
+    align-items: center;
+    height: 30%;
+    padding: 10% 20%;
+  }
+
+  .one > h2,
+  .three > h2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  .two > p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .four > img {
+    height: 200px; /* Adjust the height of the images for smaller screens */
+  }
+}
+
+/*
+Tindog. A website to allow dogs to meet other like minded
+                dogs.
+
+
+Hector Hotel. A professional hotel website showcasing its features.
+
+
+Move With Joy. A professional website for a moving service company.
+
+
+Please feel free to take a look at some of my work below.
+
+Previous Projects
+
+*/
